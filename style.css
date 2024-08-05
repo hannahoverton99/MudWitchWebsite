@@ -112,3 +112,9 @@ p{
     padding: 20px 75px;
     margin: 100px 100px;
 }
+
+.socials{
+    display:flex;
+    justify-content:center;
+    margin:25px;
+}
