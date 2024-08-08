@@ -23,7 +23,7 @@ nav {
 nav .logo {
     text-align: center;
     color: #ffffff;
-    font-size: 30px;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
@@ -35,13 +35,13 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 20px;
+    margin: 0 1rem;
 }
 
 nav ul li a {
     color: #ffffff;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 nav ul li a:hover {
@@ -61,23 +61,23 @@ nav ul li a:hover {
     }
 
     nav ul li {
-        margin: 10px 20px;
+        margin: 0.5rem 0;
     }
 }
 
 @media (max-width: 480px) {
     nav .logo {
-        font-size: 20px;
+        font-size: 1.2rem;
     }
     nav ul li a {
-        font-size: 16px;
+        font-size: 1rem;
     }
 }
 .header{
     display:flex;
-    margin-left:10px;
+    justify-content:center;
     color:white;
-    font-size: 50px;
+    font-size: 2rem;
     padding-left: 10px;
     text-align: center;
 }
@@ -90,23 +90,23 @@ img{
 footer{
   background-color: darkslategrey;
   color: #ffffff;
-  padding: 10px;
+  padding: 1rem;
   margin-top: auto;
 }
 
 h2{
-    font-size: 40px;
+    font-size: 2rem;
 }
 
 p{
     
-    font-size: 20px;
+    font-size: 1.125rem;
 }
 
 .img-container{
     display:flex;
     justify-content:center;
-    margin:25px;
+    margin:1.5rem;
 }
 
 .text-border{
@@ -117,9 +117,9 @@ p{
     background-color:#c8d8d8;
 }
 form#contact-form {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
+    max-width: 100%;
+    margin: 1rem auto;
+    padding: 1rem;
     background-color: #c8d8d8;
     border: 5px solid slategrey;
     border-radius: 25px;
@@ -128,8 +128,8 @@ form#contact-form {
 form#contact-form input, 
 form#contact-form textarea {
     width: calc(100% - 20px);
-    padding: 10px;
-    margin-bottom: 15px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
     border: 2px solid slategrey;
     border-radius: 5px;
     font-size: 18px;
@@ -139,9 +139,9 @@ form#contact-form button {
     background-color: darkslategrey;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 0.5rem 1rem;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 1rem;
     cursor: pointer;
 }
 
@@ -165,7 +165,7 @@ form#contact-form button:hover {
 .popup-content {
     background-color: whitesmoke;
     margin: 15% auto;
-    padding: 20px;
+    padding: 1rem;
     border: 5px solid darkslategrey;
     border-radius: 15px;
     width: 80%;
@@ -177,11 +177,11 @@ form#contact-form button:hover {
 .popup-content button {
     background-color: darkslategrey;
     color: white;
-    padding: 10px 20px;
+    padding: 0.5rem 1rem;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 20px;
+    margin-top: 1rem;
 }
 
 .popup-content button:hover {
