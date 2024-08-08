@@ -19,14 +19,5 @@ document.getElementById('contact-form').addEventListener('submit', function(even
         });
 });
 
-// document.getElementById('contact-form').addEventListener('submit', function(event) {
-//     event.preventDefault();
 
-//     emailjs.sendForm('service_v8v92oo', 'template_uw7nui4', this)
-//         .then(function() {
-//             alert("Message sent!");
-//         }, function(error) {
-//             alert("Failed to send the message. Please try again.");
-//         });
-// });
 

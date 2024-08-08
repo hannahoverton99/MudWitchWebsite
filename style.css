@@ -17,13 +17,13 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
+    padding: 15px 20px 15px 150px;
 }
 
 nav .logo {
     text-align: center;
     color: #ffffff;
-    font-size: 24px;
+    font-size: 30px;
     font-weight: bold;
 }
 
@@ -74,9 +74,12 @@ nav ul li a:hover {
     }
 }
 .header{
+    display:flex;
+    margin-left:10px;
     color:white;
     font-size: 50px;
     padding-left: 10px;
+    text-align: center;
 }
 
 img{
@@ -111,13 +114,13 @@ p{
     border-radius: 100px;
     padding: 20px 75px;
     margin: 100px 100px;
-    background-color:#EEF7FF;
+    background-color:#c8d8d8;
 }
 form#contact-form {
     max-width: 600px;
     margin: 50px auto;
     padding: 20px;
-    background-color: #EEF7FF;
+    background-color: #c8d8d8;
     border: 5px solid slategrey;
     border-radius: 25px;
 }
