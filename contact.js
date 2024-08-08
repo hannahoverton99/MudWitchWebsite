@@ -1,48 +1,32 @@
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent the default form submission
+function showPopup() {
+    document.getElementById("custom-popup").style.display = "block";
+}
 
-    // Capture the form data
-    const formData = new FormData(event.target);
+function closePopup() {
+    document.getElementById("custom-popup").style.display = "none";
+}
 
-    // Validate the form data
-    if (validateForm(formData)) {
-        // Handle the form data (e.g., send it to the server)
-        sendFormData(formData);
-    }
+// Ensure your form has the id "contact-form"
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the form from submitting the traditional way
+
+    // Replace 'YOUR_SERVICE_ID' and 'YOUR_TEMPLATE_ID' with your actual EmailJS service and template IDs
+    emailjs.sendForm('service_v8v92oo', 'template_uw7nui4', this)
+        .then(function() {
+            showPopup(); // Show the custom popup
+        }, function(error) {
+            console.log('FAILED...', error);
+        });
 });
 
-function validateForm(formData) {
-    let isValid = true;
+// document.getElementById('contact-form').addEventListener('submit', function(event) {
+//     event.preventDefault();
 
-    // Example validation: Check if the email is valid
-    const email = formData.get('email');
-    if (!validateEmail(email)) {
-        isValid = false;
-        alert('Please enter a valid email address.');
-    }
+//     emailjs.sendForm('service_v8v92oo', 'template_uw7nui4', this)
+//         .then(function() {
+//             alert("Message sent!");
+//         }, function(error) {
+//             alert("Failed to send the message. Please try again.");
+//         });
+// });
 
-    // Add more validation as needed
-
-    return isValid;
-}
-
-function validateEmail(email) {
-    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return re.test(String(email).toLowerCase());
-}
-
-function sendFormData(formData) {
-    // Simulate sending data to the server
-    fetch('submit_form.php', {
-        method: 'POST',
-        body: formData
-    })
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('responseMessage').textContent = 'Thank you for contacting us!';
-    })
-    .catch(error => {
-        console.error('Error:', error);
-        document.getElementById('responseMessage').textContent = 'There was an error submitting your form. Please try again.';
-    });
-}
