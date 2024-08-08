@@ -15,9 +15,9 @@ body {
 /* Navigation bar styles */
 nav {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 15px 20px;
 }
 
 nav .logo {
@@ -35,13 +35,13 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
     color: #ffffff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 nav ul li a:hover {
@@ -111,10 +111,58 @@ p{
     border-radius: 100px;
     padding: 20px 75px;
     margin: 100px 100px;
+    background-color:#EEF7FF;
+}
+/* Container to match the rest of the site */
+.contact-form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 40px;
+    border-radius: 25px;
+    background-color: #EEF7FF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.socials{
-    display:flex;
-    justify-content:center;
-    margin:25px;
+/* Form group styles */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
 }
+
+/* Label styles */
+.form-group label {
+    font-size: 18px;
+    color: darkslategrey;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Input and textarea styles */
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid slategrey;
+    border-radius: 10px;
+    font-size: 18px;
+    background-color: whitesmoke;
+    color: darkslategrey;
+}
+
+/* Button styles */
+button {
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: darkslategrey;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2a3f3f;
+}
+
+
